@@ -1,13 +1,15 @@
 <template>
   <nav>
+    <img alt="Vue logo" src="./assets/Logo.png">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </nav>
-  <!-- <router-view/> -->
+  <router-view/>
 </template>
 
 <script>
 // @ is an alias to /src
+import 'normalize.css'
 export default {
   name: 'AppView',
   components: {
@@ -35,6 +37,7 @@ export default {
 
 nav {
   padding: 30px;
+  background-color: rgba(255, 255, 255, 0.5);
 
   a {
     font-weight: bold;
