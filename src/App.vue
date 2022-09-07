@@ -1,16 +1,16 @@
 <template>
-  <Header/>
+  <!-- <Header/> -->
   <router-view/>
 </template>
 
 <script>
 // @ is an alias to /src
 // import 'normalize.css';
-import Header from '@/layouts/HeaderLayout.vue';
+// import Header from '@/layouts/HeaderLayout.vue';
 export default {
   name: 'AppView',
   components: {
-    Header
+    // Header
   },
   data(){
     return {
