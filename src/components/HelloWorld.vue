@@ -15,6 +15,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+.hello{
+  height: 800px;
+  background: rgb(146, 248, 197);
+  border: solid 5px #333;
+  opacity: 0.2;
+}
 h3 {
   margin: 40px 0 0;
 }
