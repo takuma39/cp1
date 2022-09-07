@@ -6,10 +6,17 @@
         <img alt="Vue logo" src="@/assets/logo.png">
       </router-link>
     </h1>
-    <div class="header__menu">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <ul class="header__menu">
+      <li>
+        <router-link to="/">Home</router-link>
+      </li>
+      <li>
+        <router-link to="/about">Concept</router-link>
+      </li>
+      <li>
+        <router-link to="/about">Product</router-link>
+      </li>
+    </ul>
     </nav>
   </header>
 </template>
@@ -33,19 +40,31 @@ export default {
   background-color: rgba(255, 255, 255, 0.5);
 
   &__nav{
-    width: 90%;
-    max-width: 1070px;
-    padding: 10px 0px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    position: relative;
+    height: 80px;
+    width: 100%;
   }
 
   &__logo{
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50px;
     width: 54px;
   }
 
   &__menu {
+    display: flex;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    
+
+    li:nth-child(n+2){
+      margin-left: 20px;
+    }
+
     a {
       font-weight: bold;
       color: #2c3e50;
