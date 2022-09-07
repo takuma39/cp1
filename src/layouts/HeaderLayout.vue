@@ -3,7 +3,7 @@
     <nav class="header__nav">
     <h1 class="header__logo">
       <router-link to="/">
-        <img alt="Vue logo" src="@/assets/logo.png">
+        <img alt="logo" src="@/assets/logo.png">
       </router-link>
     </h1>
     <ul class="header__menu">
