@@ -46,6 +46,7 @@ export default {
   &__inner{
     width: 100%;
     display: flex;
+    margin-top: 20px;
   }
 
   &__image{
@@ -61,7 +62,7 @@ export default {
   }
 
   &__textArea{
-    margin: 50px 0 0 30px;
+    margin: 0 0 0 30px;
     width: calc(100% - 500px);
     height: 100%;
 
