@@ -11,10 +11,13 @@
         <router-link to="/">Home</router-link>
       </li>
       <li>
-        <router-link to="/about">Concept</router-link>
+        <router-link to="/concept">Concept</router-link>
       </li>
       <li>
-        <router-link to="/about">Product</router-link>
+        <router-link to="/products">Product</router-link>
+      </li>
+      <li>
+        <router-link to="/shop">Shop</router-link>
       </li>
     </ul>
     </nav>
@@ -68,9 +71,14 @@ export default {
     a {
       font-weight: bold;
       color: #2c3e50;
+      transition: all 0.2s;
   
       &.router-link-exact-active {
-        color: #0080ff;
+        color: #63C8FF;
+      }
+
+      &:hover{
+        color: #63C8FF;
       }
     }
   }

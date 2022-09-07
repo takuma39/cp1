@@ -4,13 +4,13 @@
       <img alt="Vue logo" src="@/assets/logo.png">
     </div>
     <div class="homeTop__circle" data-type="concept">
-      <router-link to="/about">Concept</router-link>
+      <router-link to="/concept">Concept</router-link>
     </div>
-    <div class="homeTop__circle" data-type="product">
-      <router-link to="/about">Product</router-link>
+    <div class="homeTop__circle" data-type="products">
+      <router-link to="/products">Products</router-link>
     </div>
     <div class="homeTop__circle" data-type="shop">
-      <router-link to="/about">Shop</router-link>
+      <router-link to="/shop">Shop</router-link>
     </div>
 
   </div>
@@ -67,7 +67,7 @@ export default {
       animation: upDown 2s ease 1.2s infinite alternate none running;
     }
 
-    &[data-type='product']{
+    &[data-type='products']{
       left: 73vw;
       top: 350px;
       animation: upDown 2s ease 0.2s infinite alternate none running;
