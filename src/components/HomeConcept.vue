@@ -20,17 +20,19 @@
       </div>
     </div>
     <div class="homeConcept__buttonArea">
-      <router-link to="/concept">more</router-link>
+      <MoreButton link="/concept"/>
     </div>
   </div>
 </template>
 
 <script>
 import SectionTitle from '@/components/SectionTitle.vue';
+import MoreButton from '@/components/MoreButton.vue';
 export default {
   name: 'HomeConcept',
   components: {
     SectionTitle,
+    MoreButton,
   }
 }
 </script>
@@ -87,22 +89,6 @@ export default {
   &__buttonArea{
     text-align: center;
     margin-top: 20px;
-
-    a{
-      display: inline-block;
-      padding: 8px 45px;
-      border: 1px solid #fff;
-      border-radius: 100em;
-      background-color: rgba($color: #ffffff, $alpha: 0.8);
-      font-size: 1.6rem;
-      font-weight: 600;
-      transition: all 0.2s;
-
-      &:hover{
-        background-color: rgba($color: #63C8FF, $alpha: 0.8);
-        color: #fff;
-      }
-    }
   }
 }
 
