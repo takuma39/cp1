@@ -1,6 +1,6 @@
 <template>
   <div class="homeConcept">
-    <h2>Concept</h2>
+    <SectionTitle title="Concept"/>
     <div class="homeConcept__inner">
       <div class="homeConcept__image">
         <img alt="logo" src="@/assets/woman1.jpg">
@@ -26,9 +26,12 @@
 </template>
 
 <script>
+import SectionTitle from '@/components/SectionTitle.vue';
 export default {
   name: 'HomeConcept',
-
+  components: {
+    SectionTitle,
+  }
 }
 </script>
 

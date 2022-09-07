@@ -3,6 +3,7 @@
   <div class="home">
     <HomeTop/>
     <HomeConcept/>
+    <HomeProducts/>
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   </div>
 </template>
@@ -13,6 +14,7 @@
 // import Header from '@/layouts/HeaderLayout.vue';
 import HomeTop from '@/components/HomeTop.vue';
 import HomeConcept from '@/components/HomeConcept.vue';
+import HomeProducts from '@/components/HomeProducts.vue';
 
 export default {
   name: 'HomeView',
@@ -20,6 +22,7 @@ export default {
     // HelloWorld,
     HomeTop,
     HomeConcept,
+    HomeProducts
     // Header
   }
 }
