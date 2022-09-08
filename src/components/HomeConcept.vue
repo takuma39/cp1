@@ -50,15 +50,17 @@ export default {
 
   &__inner{
     width: 100%;
+    max-width: 1000px;
     display: flex;
-    margin-top: 20px;
+    margin: 20px auto 0 auto;
   }
 
   &__image{
     display: block;
-    width: 500px;
+    width: 400px;
     height: 500px;
     overflow: hidden;
+    border-radius: 20px;
 
     img{
       position: relative;
@@ -75,7 +77,6 @@ export default {
       font-size: 30px;
       font-weight: bold;
       color: #8ebeec;
-      background: linear-gradient(transparent 70%, #ffffff 70%);
     }
 
     p{
@@ -88,7 +89,7 @@ export default {
 
   &__buttonArea{
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
   }
 }
 
