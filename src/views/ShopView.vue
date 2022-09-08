@@ -42,7 +42,7 @@ export default {
     max-width: 960px;
     margin: 0 auto;
     background-color: rgba($color: #fff, $alpha: 0.5);
-    border-radius: 10%;
+    border-radius: 20px;
     padding: 60px 0px;
     margin-top: 30px;
 
