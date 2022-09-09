@@ -1,7 +1,9 @@
 <template>
   <div class="homeProducts">
     <SectionTitle title="Products"/>
+    <div class="homeProducts__inner">
 
+    </div>
   </div>
 </template>
 
@@ -19,5 +21,13 @@ export default {
 .homeProducts{
   position: relative;
   padding: 30px;
+
+  &__inner{
+    height: 600px;
+    background-color: rgba($color: #fff, $alpha: 1.0);
+    background-image: url(@/assets/images/bottles/bottles_all.png);
+    background-size: cover;
+    background-position: center;
+  }
 }
 </style>
