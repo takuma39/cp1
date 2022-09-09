@@ -15,7 +15,7 @@ export default {
 a{
   display: inline-block;
   padding: 8px 45px;
-  border: 1px solid #fff;
+  border: 2px solid #63C8FF;
   border-radius: 100em;
   background-color: rgba($color: #ffffff, $alpha: 0.8);
   font-size: 1.6rem;
