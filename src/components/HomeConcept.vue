@@ -39,7 +39,7 @@ export default {
 
 <style scoped lang="scss">
 .homeConcept{
-  background-color: rgba($color: #fff, $alpha: 0.5);
+  background-color: rgba($color: #fff, $alpha: 0.8);
   padding: 30px;
 
   h2{
