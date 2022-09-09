@@ -1,0 +1,54 @@
+// breakpoint
+$break1: 320;
+$break2: 480;
+$break3: 600;
+$break4: 760;
+$break5: 960;
+$break6: 1280;
+$breakpoints: (
+  // br以上
+  "o-br1":
+    (
+      min-width: #{$break1 + 1}px,
+    ),
+  "o-br2": (
+    min-width: #{$break2 + 1}px,
+  ),
+  "o-br3": (
+    min-width: #{$break3 + 1}px,
+  ),
+  "o-br4": (
+    min-width: #{$break4 + 1}px,
+  ),
+  "o-br5": (
+    min-width: #{$break5 + 1}px,
+  ),
+  "o-br6": (
+    min-width: #{$break6 + 1}px,
+  ),
+  // br以下
+  "u-br1":
+    (
+      max-width: #{$break1}px,
+    ),
+  "u-br2": (
+    max-width: #{$break2}px,
+  ),
+  "u-br3": (
+    max-width: #{$break3}px,
+  ),
+  "u-br4": (
+    max-width: #{$break4}px,
+  ),
+  "u-br5": (
+    max-width: #{$break5}px,
+  ),
+  "u-br6": (
+    max-width: #{$break5}px,
+  )
+) !default;
+@mixin mq($breakpoint) {
+  @media print, screen and #{inspect(map-get($breakpoints, $breakpoint))} {
+    @content;
+  }
+}
