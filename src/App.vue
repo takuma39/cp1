@@ -1,5 +1,5 @@
 <template>
-  <!-- <Header/> -->
+  <Header v-if="$route.path !== '/'" />
   <router-view/>
   <Footer/>
 </template>
@@ -7,12 +7,12 @@
 <script>
 // @ is an alias to /src
 // import 'normalize.css';
-// import Header from '@/layouts/HeaderLayout.vue';
+import Header from '@/layouts/HeaderLayout.vue';
 import Footer from '@/layouts/FooterLayout.vue';
 export default {
   name: 'AppView',
   components: {
-    // Header
+    Header,
     Footer
   },
   data(){
@@ -21,7 +21,7 @@ export default {
   },
   methods: {},
   mounted() {
-
+    console.log(this.$route.params);
   }
 }
 
@@ -36,5 +36,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
 }
+
+
 
 </style>

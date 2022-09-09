@@ -1,5 +1,4 @@
 <template>
-<Header/>
   <div class="shop">
     <div class="shop__header">
       <PageTitle title="Shop"/>
@@ -21,11 +20,9 @@
 </template>
 
 <script>
-import Header from '@/layouts/HeaderLayout.vue';
 import PageTitle from '@/components/PageTitle.vue';
 export default {
   components: {
-    Header,
     PageTitle
   },
 }
