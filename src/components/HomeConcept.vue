@@ -3,7 +3,7 @@
     <SectionTitle title="Concept"/>
     <div class="homeConcept__inner">
       <div class="homeConcept__image">
-        <img alt="logo" src="@/assets/woman1.jpg">
+        <img alt="logo" src="@/assets/images/woman/woman1.jpg">
       </div>
       <div class="homeConcept__textArea">
         <h4>どんな悩みも、向き合い、受け止める。</h4>

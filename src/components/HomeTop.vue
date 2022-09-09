@@ -1,7 +1,7 @@
 <template>
   <div class="homeTop">
     <div class="homeTop__hero">
-      <img alt="logo" src="@/assets/logo.png">
+      <img alt="logo" src="@/assets/images/logo/logo.png">
     </div>
     <div class="homeTop__circle" data-type="concept">
       <router-link to="/concept">Concept</router-link>

@@ -8,11 +8,11 @@
       <p>商品お取り扱い店舗はこちら</p>
       <ul class="shop__list">
         <li>
-          <img alt="logo" src="@/assets/logo.png">
+          <img alt="logo" src="@/assets/images/logo/logo.png">
           <p>店舗A</p>
         </li>
         <li>
-          <img alt="logo" src="@/assets/logo.png">
+          <img alt="logo" src="@/assets/images/logo/logo.png">
           <p>店舗B</p>
         </li>
       </ul>
