@@ -60,6 +60,10 @@ export default {
   &__flex{
     margin-top: 20px;
     display: flex;
+
+    // $break5: 960;
+    @include mq(u-br5) {
+    }
   }
 
   &__image{
@@ -92,6 +96,11 @@ export default {
       font-size: 18px;
       font-weight: bold;
       line-height: 1.5;
+
+      // $break5: 960;
+      @include mq(u-br5) {
+        
+      }
     }
   }
 

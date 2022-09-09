@@ -30,8 +30,8 @@ export default {
 
 <style lang="scss" scoped>
 .shop{
+  padding: 100px 0;
   &__header{
-    margin-top: 100px;
   }
 
   &__inner{
