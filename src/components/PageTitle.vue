@@ -16,10 +16,12 @@ export default {
     text-align: center;
     font-size: 50px;
     font-weight: bold;
-    color:#0080ff;
+    color:#03a6ff;
+    padding: 20px 0;
+    
 
     span{
-      border-bottom:5px solid  #0080ff;
+      border-bottom:5px solid  #03a6ff;
     }
   }
 </style>
