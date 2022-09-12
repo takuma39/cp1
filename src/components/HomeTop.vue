@@ -35,6 +35,7 @@ export default {
   // $break5: 600;
   @include mq(u-br3) {
     flex-direction: column;
+    padding-top: 20px;
   }
 
   &__hero{
