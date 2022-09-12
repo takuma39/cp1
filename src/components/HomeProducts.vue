@@ -43,31 +43,27 @@ export default {
     font-size: 20px;
     font-weight: bold;
 
-    // $break5: 480;
-    @include mq(u-br2) {
+    // $break5: 600;
+    @include mq(u-br3) {
       margin-top: 10px;
     }
   }
 
   &__list{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-bottom: 28px;
     margin-top: 30px;
 
     // $break5: 600;
     @include mq(u-br3) {
       flex-wrap: wrap;
-    }
-
-    // $break5: 480;
-    @include mq(u-br2) {
       margin-top: 20px;
     }
 
     li{
-      width: 25%;
-      padding-top: 25%;
+      width: 20%;
+      padding-top: 20%;
       border-radius: 50%;
       background-position: center;
       background-size: cover;
@@ -75,8 +71,8 @@ export default {
 
       // $break5: 600;
       @include mq(u-br3) {
-        width: 40%;
-        padding-top: 40%;
+        width: 35%;
+        padding-top: 35%;
       }
 
       &:nth-child(n+3){   
