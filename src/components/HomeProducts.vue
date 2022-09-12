@@ -29,6 +29,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "@/assets/sass/app2.scss";
 .homeProducts{
   position: relative;
   padding: 30px;
@@ -41,26 +42,48 @@ export default {
     text-align: center;
     font-size: 20px;
     font-weight: bold;
+
+    // $break5: 480;
+    @include mq(u-br2) {
+      margin-top: 10px;
+    }
   }
 
   &__list{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-bottom: 28px;
     margin-top: 30px;
 
+    // $break5: 600;
+    @include mq(u-br3) {
+      flex-wrap: wrap;
+    }
+
+    // $break5: 480;
+    @include mq(u-br2) {
+      margin-top: 20px;
+    }
+
     li{
-      width: 25vw;
-      max-width: 200px;
-      height: 25vw;
-      max-height: 200px;
+      width: 25%;
+      padding-top: 25%;
       border-radius: 50%;
       background-position: center;
       background-size: cover;
       position: relative;
 
-      &:nth-child(n+2){
-        margin-left: 10px;
+      // $break5: 600;
+      @include mq(u-br3) {
+        width: 40%;
+        padding-top: 40%;
+      }
+
+      &:nth-child(n+3){   
+        // $break5: 600;
+        @include mq(u-br3) {
+          margin-top: 40px;
+        }                             
       }
 
       &::after{
@@ -102,6 +125,11 @@ export default {
   &__buttonArea{
     text-align: center;
     margin-top: 30px;
+
+    // $break5: 480;
+    @include mq(u-br2) {
+      margin-top: 20px;
+    }
   }
 }
 </style>
