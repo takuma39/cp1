@@ -22,7 +22,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-#app >>> .header{
-  display: none;
-}
+@import "@/assets/sass/app2.scss";
 </style>
