@@ -35,12 +35,13 @@ export default {
   // $break5: 600;
   @include mq(u-br3) {
     flex-direction: column;
-    padding-top: 20px;
+    padding: 20px 0;
   }
 
   &__hero{
     width: 30%;
-    padding: 100px 0;
+    padding: 120px 0;
+    margin-left: 20px;
     animation: upDown 2s ease 0s infinite alternate none running;
 
     // $break5: 600;
