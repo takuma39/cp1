@@ -285,6 +285,7 @@ export default {
     max-width: 1000px;
     margin:20px auto 0 auto;
     background-color: rgba($color: #FFF, $alpha: 0.8);
+    border-radius: 20px;
   }
 
   &__list{
