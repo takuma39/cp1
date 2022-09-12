@@ -29,35 +29,40 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/assets/sass/app2.scss";
 .shop{
-  padding: 100px 0;
+  padding: 100px 0 50px 0;
   &__header{
   }
 
   &__inner{
-    width:100%;
-    max-width: 960px;
-    margin: 0 auto;
-    background-color: rgba($color: #fff, $alpha: 0.5);
+    width: 95%;
+    max-width: 1000px;
+    margin:20px auto 0 auto;
+    background-color: rgba($color: #FFF, $alpha: 0.8);
     border-radius: 20px;
-    padding: 60px 0px;
-    margin-top: 30px;
+    padding: 30px;
 
     p{
       text-align: center;
-      font-size: 20px;
+      @include rem(20);
       font-weight: bold;
+
+      // $break5: 480;
+      @include mq(u-br2) {
+        @include rem(16);
+      }
     }
   }
 
   &__list{
-    margin-top: 60px;
+    margin-top: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 
     li{
       width: 200px;
-      margin: 0 60px;
+      margin: 0 10px;
 
       p{
         margin-top: 20px;
