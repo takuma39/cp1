@@ -8,7 +8,7 @@
         <li class="products__item">
           <h3>
             <span data-type="name" data-color="blue">BLUE</span>
-            <span data-type="text">ボリュームのでにくい髪を、ふんわりと弾力のある艶髪へ</span>
+            <span data-type="text">ボリュームのでにくい髪を、<br>ふんわりと弾力のある艶髪へ</span>
           </h3>
           <div class="products__flex">
           <div class="products__image">
@@ -42,7 +42,7 @@
                   </li>
                   <li>
                     <p>1000mL</p>
-                    <p>6,000円（詰替）</p>
+                    <p>6,000円<span>（詰替）</span></p>
                   </li>
                 </ul>
               </div>
@@ -60,7 +60,7 @@
                   </li>
                   <li>
                     <p>1000g</p>
-                    <p>8,140円（詰替）</p>
+                    <p>8,140円<span>（詰替）</span></p>
                   </li>
                 </ul>
               </div>
@@ -72,7 +72,7 @@
         <li class="products__item">
           <h3>
             <span data-type="name" data-color="white">WHITE</span>
-            <span data-type="text">からまりやすい髪を、サラサラでなめらかな艶髪へ</span>
+            <span data-type="text">からまりやすい髪を、<br>サラサラでなめらかな艶髪へ</span>
           </h3>
           <div class="products__flex">
           <div class="products__image">
@@ -106,7 +106,7 @@
                   </li>
                   <li>
                     <p>1000mL</p>
-                    <p>6,000円（詰替）</p>
+                    <p>6,000円<span>（詰替）</span></p>
                   </li>
                 </ul>
               </div>
@@ -124,7 +124,7 @@
                   </li>
                   <li>
                     <p>1000g</p>
-                    <p>8,140円（詰替）</p>
+                    <p>8,140円<span>（詰替）</span></p>
                   </li>
                 </ul>
               </div>
@@ -136,7 +136,7 @@
         <li class="products__item">
           <h3>
             <span data-type="name" data-color="green">GREEN</span>
-            <span data-type="text">ダメージで乾燥した髪を、しっとりとうるおいのある艶髪へ</span>
+            <span data-type="text">ダメージで乾燥した髪を、<br>しっとりとうるおいのある艶髪へ</span>
           </h3>
           <div class="products__flex">
           <div class="products__image">
@@ -170,7 +170,7 @@
                   </li>
                   <li>
                     <p>1000mL</p>
-                    <p>6,000円（詰替）</p>
+                    <p>6,000円<span>（詰替）</span></p>
                   </li>
                 </ul>
               </div>
@@ -188,7 +188,7 @@
                   </li>
                   <li>
                     <p>1000g</p>
-                    <p>8,140円（詰替）</p>
+                    <p>8,140円<span>（詰替）</span></p>
                   </li>
                 </ul>
               </div>
@@ -200,7 +200,7 @@
         <li class="products__item">
           <h3>
             <span data-type="name" data-color="orange">ORANGE</span>
-            <span data-type="text">ダメージでかたくなった髪を、やわらかくなめらかな艶髪へ</span>
+            <span data-type="text">ダメージでかたくなった髪を、<br>やわらかくなめらかな艶髪へ</span>
           </h3>
           <div class="products__flex">
           <div class="products__image">
@@ -234,7 +234,7 @@
                   </li>
                   <li>
                     <p>1000mL</p>
-                    <p>6,000円（詰替）</p>
+                    <p>6,000円<span>（詰替）</span></p>
                   </li>
                 </ul>
               </div>
@@ -252,7 +252,7 @@
                   </li>
                   <li>
                     <p>1000g</p>
-                    <p>8,140円（詰替）</p>
+                    <p>8,140円<span>（詰替）</span></p>
                   </li>
                 </ul>
               </div>
@@ -281,7 +281,7 @@ export default {
   padding: 100px 0 50px;
 
   &__inner{
-    width: 90%;
+    width: 95%;
     max-width: 1000px;
     margin:20px auto 0 auto;
     background-color: rgba($color: #FFF, $alpha: 0.8);
@@ -293,17 +293,22 @@ export default {
   &__item{
     padding: 20px;
 
-    &:nth-child(n +2){
-      margin-top: 20px;
-    }
-
     h3{
       font-weight: bold;
       display: flex;
       align-items: center;
 
+      // $break5: 760;
+      @include mq(u-br4) {
+        flex-direction: column;
+      }
+
       span[data-type="name"]{
         @include rem(40);
+        // $break5: 480;
+        @include mq(u-br2) {
+          @include rem(30);
+        }
       }
       span[data-color="blue"]{
         color: #99c8e1;
@@ -320,6 +325,25 @@ export default {
       span[data-type="text"]{
         margin-left: 30px;
         @include rem(20);
+
+        // $break5: 760;
+        @include mq(u-br4) {
+          margin: 10px 0 0 0;
+          @include rem(15);
+        }
+        // $break5: 480;
+        @include mq(u-br2) {
+          @include rem(14);
+          line-height: 1.2;
+        }
+      }
+
+      br{
+        display: none;
+        // $break5: 480;
+        @include mq(u-br2) {
+          display: block;
+        }
       }
     }
   }
@@ -328,35 +352,66 @@ export default {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+
+    // $break5: 760;
+    @include mq(u-br4) {
+      flex-direction: column;
+    }
   }
 
   &__image{
-    width: 35%;
-    max-width: 3500px;
+    width: 38%;
+    max-width: 400px;
+
+    // $break5: 760;
+    @include mq(u-br4) {
+      width: 100%;
+      max-width: 100%;
+    }
   }
 
   &__textArea{
-    width: 60%;
+    width: 58%;
+    // $break5: 760;
+    @include mq(u-br4) {
+      width: 100%;
+      margin-top: 10px
+    }
   }
 
   &__features{
     h4{
-      @include rem(20);
+      @include rem(18);
       font-weight: bold;
+
+      // $break5: 960;
+      @include mq(u-br5) {
+        @include rem(15);
+      }
     }
 
     ul{
-      margin-top: 10px;
+      margin-top: 8px;
       border-top: dashed 1px #717071;
 
 
       li{
-        padding: 10px;
+        padding: 8px;
         border-bottom: dashed 1px #717071;
+
+        // $break5: 960;
+        @include mq(u-br5) {
+          padding: 5px;
+        }
 
         p{
           @include rem(16);
           font-weight: bold;
+
+          // $break5: 960;
+          @include mq(u-br5) {
+            @include rem(13);
+          }
         }
       }
     }
@@ -366,9 +421,16 @@ export default {
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
+    
+
+    // $break5: 960;
+    @include mq(u-br5) {
+      margin-top: 10px;
+    }
 
     h5{
       background-color: whitesmoke;
+      background-color: #badff3;
       padding: 3px;
       font-weight: bold;
     }
@@ -385,6 +447,14 @@ export default {
 
         p{
           width: 50%;
+          // $break5: 960;
+          @include mq(u-br5) {
+            @include rem(13);
+          }
+
+          span{
+            @include rem(12);
+          }
         }
 
       }
@@ -392,13 +462,11 @@ export default {
 
     div[data-type="shampoo"]{
       width: 50%;
-
     }
 
     div[data-type="treatment"]{
       width: 50%;
       margin-left: 20px;
-
     }
   }
 
