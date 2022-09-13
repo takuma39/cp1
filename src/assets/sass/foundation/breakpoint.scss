@@ -97,7 +97,10 @@ $breakpoints: (
   // $break2: 480;
   @include mq(u-br2) {
   }
-  // $break1: 320;
+  // $break1: 380;
   @include mq(u-br1) {
+  }
+  // $break1: 330;
+  @include mq(u-br0) {
   }
 }
