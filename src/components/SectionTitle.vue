@@ -12,9 +12,15 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "@/assets/sass/app2.scss";
   h2{
     text-align: center;
-    font-size: 50px;
+    @include rem(50);
     font-weight: bold;
+
+    // $break1: 380;
+    @include mq(u-br1) {
+      @include rem(40);
+    }
   }
 </style>
