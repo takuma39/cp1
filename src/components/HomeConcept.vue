@@ -4,7 +4,7 @@
       <SectionTitle title="Concept"/>
       <div class="homeConcept__flex">
         <div class="homeConcept__image">
-          <img alt="logo" src="@/assets/images/woman/woman1.jpg">
+          <!-- <img alt="logo" src="@/assets/images/woman/woman1.jpg"> -->
         </div>
         <div class="homeConcept__textArea">
           <h4>どんな悩みも、向き合い、受け止める。</h4>
@@ -40,66 +40,99 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "@/assets/sass/foundation/breakpoint.scss";
+@import "@/assets/sass/app2.scss";
 .homeConcept{
   background-color: rgba($color: #fff, $alpha: 0.8);
   padding: 30px;
 
-  h2{
-    text-align: center;
-    font-size: 50px;
-    font-weight: bold;
+  // $break5: 480;
+  @include mq(u-br2) {
+    padding: 15px;
   }
 
   &__inner{
     width: 100%;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
   }
 
   &__flex{
     margin-top: 20px;
     display: flex;
+    justify-content: space-between;
 
     // $break5: 960;
-    @include mq(u-br5) {
+    @include mq(u-br4) {
+      flex-direction: column;
     }
   }
 
   &__image{
     display: block;
-    width: 100%;
-    max-width: 400px;
-    height: 500px;
+    width: 35%;
+    min-width: 270px;
+    padding-top: 500px;
     overflow: hidden;
     border-radius: 20px;
+    background-image: url(@/assets/images/woman/woman1.jpg);
+    background-size: cover;
+    background-position: center;
 
-    img{
-      position: relative;
-      top:-100px;
+    // $break5: 760;
+    @include mq(u-br4) {
+      width: 100%;
+      padding-top: 60%;
+      background-position: 50% 35%;
     }
   }
 
   &__textArea{
-    margin: 0 0 0 30px;
-    width: calc(100% - 500px);
+    width: 60%;
     height: 100%;
+    margin-left: 20px;
 
-    h4{
-      font-size: 30px;
-      font-weight: bold;
-      color: #8ebeec;
+    // $break5: 760;
+    @include mq(u-br4) {
+      width: 100%;
+      margin: 20px 0 0 0;
     }
 
-    p{
-      margin: 20px 0 0 0;
-      font-size: 18px;
+    h4{
+      @include rem(28);
       font-weight: bold;
-      line-height: 1.5;
+      color: #8ebeec;
 
       // $break5: 960;
       @include mq(u-br5) {
-        
+        @include rem(22);
+      }
+
+      // $break2: 480;
+      @include mq(u-br2) {
+        @include rem(19);
+      }
+
+      // $break1: 380;
+      @include mq(u-br1) {
+        @include rem(16);
+      }
+    }
+
+    p{
+      margin-top: 20px;
+      @include rem(18);
+      font-weight: bold;
+      line-height: 1.5;
+
+      // $break2: 480;
+      @include mq(u-br2) {
+        @include rem(15);
+        margin-top: 10px;
+      }
+
+      // $break1: 380;
+      @include mq(u-br1) {
+        @include rem(14);
       }
     }
   }
@@ -107,6 +140,12 @@ export default {
   &__buttonArea{
     text-align: center;
     margin-top: 30px;
+
+    // $break2: 480;
+    @include mq(u-br2) {
+      @include rem(15);
+      margin-top: 15px;
+    }
   }
 }
 
