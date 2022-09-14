@@ -33,6 +33,7 @@ export default {
 .homeProducts{
   position: relative;
   padding: 30px;
+  background-color: rgba($color: $blue-4, $alpha: 0.6);
 
   &__inner{
   }
