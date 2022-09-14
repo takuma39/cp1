@@ -33,8 +33,7 @@ export default {
 <style lang="scss">
 @import "@/assets/sass/app2.scss";
 .footer{
-  // height: 200px;
-  background-color: rgba($color: #fff, $alpha: 0.8);
+  background-color: rgba($color: $blue-5, $alpha: 0.8);
   padding: 50px 30px;
 
   h1{
@@ -42,6 +41,7 @@ export default {
     font-weight: bold;
     font-size: 30px;
     color: $blue-1;
+    color: #fff;
   }
 
   &__sns{
@@ -71,7 +71,11 @@ export default {
       transition: all 0.2s;
 
       &:hover{
-        color: #03a6ff;
+        color: #fff;
+      }
+
+      .router-link-exact-active{
+        color: #fff;
       }
     }
   }
