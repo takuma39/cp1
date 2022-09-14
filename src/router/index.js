@@ -1,8 +1,8 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomeView from "../views/HomeView.vue";
-import ConceptView from "../views/ConceptView.vue";
-import ProductsView from "../views/ProductsView.vue";
-import ShopView from "../views/ShopView.vue";
+import HomeView from "../views/home/HomeView.vue";
+import ConceptView from "../views/concept/ConceptView.vue";
+import ProductsView from "../views/products/ProductsView.vue";
+import ShopView from "../views/shop/ShopView.vue";
 
 const routes = [
   {
