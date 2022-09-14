@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import HomeTop from '@/components/HomeTop.vue';
-import HomeConcept from '@/components/HomeConcept.vue';
-import HomeProducts from '@/components/HomeProducts.vue';
+import HomeTop from './components/HomeTop.vue';
+import HomeConcept from './components/HomeConcept.vue';
+import HomeProducts from './components/HomeProducts.vue';
 
 export default {
   name: 'HomeView',
