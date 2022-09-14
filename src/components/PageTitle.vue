@@ -12,16 +12,17 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "@/assets/sass/app2.scss";
   h1{
     text-align: center;
     font-size: 50px;
     font-weight: bold;
-    color:#03a6ff;
+    color:$blue-1;
     padding: 20px 0;
     
 
     span{
-      border-bottom:5px solid  #03a6ff;
+      border-bottom:5px solid  $blue-1;
     }
   }
 </style>

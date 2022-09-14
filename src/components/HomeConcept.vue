@@ -100,7 +100,7 @@ export default {
     h4{
       @include rem(28);
       font-weight: bold;
-      color: #8ebeec;
+      color: $blue-3;
 
       // $break5: 960;
       @include mq(u-br5) {

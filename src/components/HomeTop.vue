@@ -78,7 +78,7 @@ export default {
     transition: all 0.2s;
 
     &:hover{
-      background-color: rgba($color: #63C8FF, $alpha: 0.8);
+      background-color: rgba($color: $blue-2, $alpha: 0.8);
       color: #fff;
     }
 

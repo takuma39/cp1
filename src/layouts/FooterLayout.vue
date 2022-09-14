@@ -31,6 +31,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import "@/assets/sass/app2.scss";
 .footer{
   // height: 200px;
   background-color: rgba($color: #fff, $alpha: 0.8);
@@ -40,7 +41,7 @@ export default {
     text-align: center;
     font-weight: bold;
     font-size: 30px;
-    color: #03a6ff;
+    color: $blue-1;
   }
 
   &__sns{

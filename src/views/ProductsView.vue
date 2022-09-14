@@ -312,16 +312,16 @@ export default {
         }
       }
       span[data-color="blue"]{
-        color: #99c8e1;
+        color: $product_blue;
       }
       span[data-color="white"]{
-        color: #eae3bf;
+        color: $product_white;
       }
       span[data-color="green"]{
-        color: #B1D7B4;
+        color: $product_green;
       }
       span[data-color="orange"]{
-        color: #ebc29c;
+        color: $product_orange;
       }
       span[data-type="text"]{
         margin-left: 30px;
@@ -393,12 +393,12 @@ export default {
 
     ul{
       margin-top: 8px;
-      border-top: dashed 1px #717071;
+      border-top: dashed 1px $border-1;
 
 
       li{
         padding: 8px;
-        border-bottom: dashed 1px #717071;
+        border-bottom: dashed 1px $border-1;
 
         // $break5: 960;
         @include mq(u-br5) {
@@ -430,8 +430,7 @@ export default {
     }
 
     h5{
-      background-color: whitesmoke;
-      background-color: #badff3;
+      background-color: $blue-4;
       padding: 3px;
       font-weight: bold;
     }

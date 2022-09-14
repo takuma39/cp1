@@ -31,6 +31,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import "@/assets/sass/app2.scss";
 .header{
   position: fixed;
   top: 0;
@@ -70,15 +71,14 @@ export default {
 
     a {
       font-weight: bold;
-      color: #2c3e50;
       transition: all 0.2s;
   
       &.router-link-exact-active {
-        color: #63C8FF;
+        color: $blue-1;
       }
 
       &:hover{
-        color: #63C8FF;
+        color: $blue-1;
       }
     }
   }
