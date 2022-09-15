@@ -1,0 +1,62 @@
+[
+  {    
+    "name": "blue",
+    "title": "ボリュームのでにくい髪を、ふんわりと弾力のある艶髪へ",
+    "hair_type": "細毛、 軟毛",
+    "hair_efficacy": "ふんわり感、弾力を求める方",
+    "shampoo":{
+      "amount": [250,500,1000],
+      "price":[2970,4950,6000]
+    },
+    "treatment":{
+      "amount": [200,500,1000],
+      "price":[3190,6600,8140]
+    },
+    "image": "bottles_blue.png"
+  },
+  {    
+    "name": "white",
+    "title": "からまりやすい髪を、サラサラでなめらかな艶髪へ",
+    "hair_type": "細毛、軟毛～普通毛",
+    "hair_efficacy": "サラサラ感を求める方",
+    "shampoo":{
+      "amount": [250,500,1000],
+      "price":[2970,4950,6000]
+    },
+    "treatment":{
+      "amount": [200,500,1000],
+      "price":[3190,6600,8140]
+    },
+    "image": "bottles_white.png"
+  },
+  {    
+    "name": "green",
+    "title": "ダメージで乾燥した髪を、しっとりとうるおいのある艶髪へ",
+    "hair_type": "太毛、硬毛",
+    "hair_efficacy": "しっとり感、まとまり感を求める方",
+    "shampoo":{
+      "amount": [250,500,1000],
+      "price":[2970,4950,6000]
+    },
+    "treatment":{
+      "amount": [200,500,1000],
+      "price":[3190,6600,8140]
+    },
+    "image": "bottles_green.png"
+  },
+  {    
+    "name": "orange",
+    "title": "ダメージでかたくなった髪を、やわらかくなめらかな艶髪へ",
+    "hair_type": "普通毛～太毛、硬毛",
+    "hair_efficacy": "やわらかさを求める方",
+    "shampoo":{
+      "amount": [250,500,1000],
+      "price":[2970,4950,6000]
+    },
+    "treatment":{
+      "amount": [200,500,1000],
+      "price":[3190,6600,8140]
+    },
+    "image": "bottles_orange.png"
+  }
+]

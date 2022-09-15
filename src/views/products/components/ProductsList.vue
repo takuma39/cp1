@@ -1,46 +1,95 @@
 <template>
-  <div class="products">
-    <div class="shop__header">
-      <PageTitle title="Products"/>
-    </div>
-    <div class="products__inner">
-      <ProductsList/>
-    </div>
-  </div>
+  <ul class="productsList" v-for="product in products" :key="product.id">
+    <li class="productsList__item">
+      <h3>
+        <span data-type="name" :data-color="product.name">{{ product.name }}</span>
+        <span data-type="text">{{ product.title }}</span>
+      </h3>
+      <div class="productsList__flex">
+      <div class="productsList__image">
+        <img :src="require(`@/assets/images/bottles/${product.image}`)" :alt="product.name">
+      </div>
+      <div class="productsList__textArea">
+
+        <div class="productsList__features">
+          <h4>こんな髪質の方へ</h4>
+          <ul>
+            <li>
+              <p>{{ product.hair_type }}</p>
+            </li>
+            <li>
+              <p>{{ product.efficacy }}</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="productsList__priceList">
+          <div class="productsList__price" data-type="shampoo">
+            <h5>shampoo</h5>
+            <ul>
+              <li>
+                <p>{{ product.shampoo.amount[0] }}mL</p>
+                <p>{{ product.shampoo.price[0] }}円</p>
+              </li>
+              <li>
+                <p>{{ product.shampoo.amount[1] }}mL</p>
+                <p>{{ product.shampoo.price[1] }}円</p>
+              </li>
+              <li>
+                <p>{{ product.shampoo.amount[2] }}mL</p>
+                <p>{{ product.shampoo.price[2] }}円<span>（詰替）</span></p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="productsList__price" data-type="treatment">
+            <h5>treatment</h5>
+            <ul>
+              <li>
+                <p>{{ product.treatment.amount[0] }}g</p>
+                <p>{{ product.treatment.price[0] }}円</p>
+              </li>
+              <li>
+                <p>{{ product.treatment.amount[1] }}g</p>
+                <p>{{ product.treatment.price[1] }}円</p>
+              </li>
+              <li>
+                <p>{{ product.treatment.amount[2] }}g</p>
+                <p>{{ product.treatment.price[2] }}円<span>（詰替）</span></p>
+              </li>
+            </ul>
+          </div>
+        </div>            
+
+      </div>
+      </div>
+    </li>
+  </ul>
 </template>
 
+
 <script>
-import ProductsList from './components/ProductsList.vue';
-import PageTitle from '@/components/PageTitle.vue';
+import productsJson from '../json/products.json';
 export default {
   components: {
-    PageTitle,
-    ProductsList
   },
   data(){
     return {
+      products: productsJson,
     }
-  },
-  methods: {
-
   },
 }
 </script>
 
 <style lang="scss" scoped>
 @import "@/assets/sass/app2.scss";
-.products{
-  padding: 100px 0 50px;
-
+.productsList{
   &__inner{
     width: 95%;
     max-width: 1000px;
     margin:20px auto 0 auto;
     background-color: rgba($color: #FFF, $alpha: 0.8);
     border-radius: 20px;
-  }
-
-  &__list{
   }
 
   &__item{
@@ -224,3 +273,4 @@ export default {
 
 }
 </style>
+
