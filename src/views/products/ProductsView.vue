@@ -30,6 +30,7 @@ export default {
 <style lang="scss" scoped>
 @import "@/assets/sass/app2.scss";
 .products{
+  background-color: rgba($color: #FFF, $alpha: 0.7);
   padding: 100px 0 50px;
 
   &__inner{
@@ -38,9 +39,6 @@ export default {
     margin:20px auto 0 auto;
     background-color: rgba($color: #FFF, $alpha: 0.8);
     border-radius: 20px;
-  }
-
-  &__list{
   }
 
   &__item{

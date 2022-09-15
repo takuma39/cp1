@@ -33,7 +33,7 @@ export default {
 <style lang="scss">
 @import "@/assets/sass/app2.scss";
 .footer{
-  background-color: rgba($color: $blue-5, $alpha: 0.8);
+  background-color: rgba($color: $blue-5, $alpha: 0.7);
   padding: 50px 30px;
 
   h1{
