@@ -27,7 +27,7 @@ export default {
 <style lang="scss" scoped>
 @import "@/assets/sass/app2.scss";
 .concept{
-  padding: 100px 0 0 0;
+  padding: 20px 0 0 0;
   background-color: rgba($color: #fff, $alpha: 0.7);
 }
 </style>

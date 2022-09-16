@@ -31,7 +31,7 @@ export default {
 <style lang="scss" scoped>
 @import "@/assets/sass/app2.scss";
 .shop{
-  padding: 100px 0 80px 0;
+  padding: 20px 0 50px 0;
   background-color: rgba($color: #FFF, $alpha: 0.7);
 
   &__inner{
@@ -40,22 +40,30 @@ export default {
     margin:20px auto 0 auto;
     background-color: rgba($color: #FFF, $alpha: 0.8);
     border-radius: 20px;
-    padding: 50px;
+    padding: 60px;
 
     p{
       text-align: center;
-      @include rem(20);
+      @include rem(25);
       font-weight: bold;
 
+      // $break5: 600;
+      @include mq(u-br3) {
+        @include rem(18);
+      }
       // $break5: 480;
       @include mq(u-br2) {
         @include rem(16);
+      }
+      // $break5: 380;
+      @include mq(u-br1) {
+        @include rem(14);
       }
     }
   }
 
   &__list{
-    margin-top: 20px;
+    margin-top: 35px;
     display: flex;
     justify-content: space-around;
 

@@ -31,7 +31,7 @@ export default {
 @import "@/assets/sass/app2.scss";
 .products{
   background-color: rgba($color: #FFF, $alpha: 0.7);
-  padding: 100px 0 50px;
+  padding: 20px 0 50px;
 
   &__inner{
     width: 95%;
