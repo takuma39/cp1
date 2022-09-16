@@ -1,7 +1,9 @@
 <template>
   <SpMenu/>
   <Header v-if="$route.path !== '/'" />
-  <router-view/>
+  <transition name="fade" mode="out-in">
+    <router-view/>
+  </transition>
   <Footer/>
   <Filter/>
 </template>
@@ -40,5 +42,34 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: $black-1;
+}
+
+.fade{
+  &-enter{
+    transform: translate(-100px, 0);
+
+    &-from{
+      opacity: 0;
+    }
+    &-to{
+      opacity: 1;
+    }
+    &-active{
+      transition: all 1s 0s ease;
+    }
+  }
+  &-leave{
+    transform: translate(0, 0);
+    &-from{
+      opacity: 1;
+    }
+    &-to{
+      transform: translate(100px, 0);
+      opacity: 0;
+    }
+    &-active{
+      transition: all .5s 0s ease;
+    }
+  }
 }
 </style>
