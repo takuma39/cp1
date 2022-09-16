@@ -1,5 +1,5 @@
 <template>
-  <div class="mobile-menu__cover"></div>
+  <SpMenu/>
   <Header v-if="$route.path !== '/'" />
   <router-view/>
   <Footer/>
@@ -13,12 +13,14 @@
 import Header from '@/layouts/HeaderLayout.vue';
 import Footer from '@/layouts/FooterLayout.vue';
 import Filter from '@/layouts/FilterLayout.vue';
+import SpMenu from '@/layouts/SpMenuLayout.vue';
 export default {
   name: 'AppView',
   components: {
     Header,
     Footer,
     Filter,
+    SpMenu
   },
   data(){
     return {
@@ -38,25 +40,5 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: $black-1;
-  // position: relative;
-  // top:100px;
-  // left: -100px;
-  // transition: all 0.5s;
-}
-
-.mobile-menu__cover{
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  // width: 100%;
-  // height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
-  opacity: 0; 
-  visibility: hidden;
-  transition: opacity 1s;
-  cursor: pointer;
-  z-index: 1000000;
 }
 </style>

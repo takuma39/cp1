@@ -33,15 +33,17 @@ export default {
 <style lang="scss">
 @import "@/assets/sass/app2.scss";
 .header{
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   z-index: 10000;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: rgba($color: #fff, $alpha: 0.9);
+
+  // $break4: 760;
+  @include mq(u-br4) {
+    display: none;
+  }
 
   &__nav{
     position: relative;
