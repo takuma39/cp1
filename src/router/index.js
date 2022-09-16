@@ -25,6 +25,10 @@ const routes = [
     name: "shop",
     component: ShopView,
   },
+  {
+    path: "/:catchAll(.*)",
+    redirect: "/",
+  },
 ];
 
 const router = createRouter({
